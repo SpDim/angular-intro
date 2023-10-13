@@ -11,4 +11,5 @@
 `npm install -g @angular/cli@latest`
 
 Έλεγχος εγκατάστασης:
+
 `ng version`
