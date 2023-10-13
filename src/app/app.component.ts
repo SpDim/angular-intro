@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PersonComponent } from './person/person.component';
 import { Person } from './interfaces/person';
+
+import { PersonComponent } from './person/person.component';
+import { PersonAltComponent } from './person-alt/person-alt.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, PersonComponent],
+  imports: [CommonModule, PersonComponent, PersonAltComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   name: string = 'Spyros';
@@ -16,17 +18,17 @@ export class AppComponent {
 
   person: Person = {
     givenName: 'Spyros',
-    surName: 'Dim',
+    surName: 'Dm',
     age: 0x37,
-    email: 'spdim@example.gr',
+    email: 'spdim@demo.gr',
     address: 'Athens, Greece',
   };
 
   person2: Person = {
-    givenName: 'test',
-    surName: 'user',
-    age: 0x37,
-    email: 'test@aueb.gr',
-    address: 'Thess, Greece',
+    givenName: 'Giorgos',
+    surName: 'Chatzidimitrakopoulos',
+    age: 22,
+    email: 'chatzi@aueb.gr',
+    address: 'Athens, Greece',
   };
 }
