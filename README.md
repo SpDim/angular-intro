@@ -2,6 +2,8 @@
 
 ## 6. Component Output
 
+## 7. Template driven forms
+
 - Χρήση του decorator `@Output()` σε χαρακτηριστικό της κλάσης για τη δημιουργία custom event στο component. Συνδυάζεται με το interface `EventEmitter<T>` όπου `Τ` ο τύπος των δεδομένων που μεταδίδει το custom event.
 - To custom event συνήθως προκύπτει από ένα standard event στο template του component (πχ click πάνω σε ένα κουμπί).
 
