@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
   lastName = 'Fragkoudakis';
 
   person: Person = {
+    id: 1000,
     givenName: 'Christodoulos',
     surName: 'Fragkoudakis',
     age: 0x37,
@@ -42,6 +43,7 @@ export class AppComponent implements OnInit {
   };
 
   person2: Person = {
+    id: 1001,
     givenName: 'Giorgos',
     surName: 'Chatzidimitrakopoulos',
     age: 22,
