@@ -23,3 +23,9 @@ NOTE: The "--dry-run" option means no changes were made.
 - ng-container & ng-template
 
 ## 4. *ngFor Directive 
+
+## 5. Event Binding (template -> controller and controller -> template)
+
+- Click handlers
+- Input handlers
+- Two way binding
