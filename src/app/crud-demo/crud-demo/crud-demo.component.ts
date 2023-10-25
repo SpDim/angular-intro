@@ -5,6 +5,7 @@ import { ReadUserComponent } from '../read-user/read-user.component';
 import { UpdateUserComponent } from '../update-user/update-user.component';
 import { DeleteUserComponent } from '../delete-user/delete-user.component';
 import { ListUsersComponent } from '../list-users/list-users.component';
+import { Person } from 'src/app/interfaces/person';
 
 @Component({
   selector: 'app-crud-demo',
@@ -25,5 +26,9 @@ export class CrudDemoComponent {
 
   onSelection(operation: string) {
     this.crudOperation = operation;
+  }
+
+  listUsers() {
+    this.crudOperation = 'list';
   }
 }

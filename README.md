@@ -24,6 +24,8 @@
 
 ## 12. CRUD users: Read User
 
+## 13. Create User
+
 - Πρόσβαση σε template variable μέσω του @ViewChild
 
 - Χρήση του decorator `@Output()` σε χαρακτηριστικό της κλάσης για τη δημιουργία custom event στο component. Συνδυάζεται με το interface `EventEmitter<T>` όπου `Τ` ο τύπος των δεδομένων που μεταδίδει το custom event.
