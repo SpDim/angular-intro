@@ -8,6 +8,24 @@
 
 ## 9. Http Client
 
+## 10. CRUD users scaffolding
+
+- Δημιουργία υποεφαρμογής "CRUD χρηστών" στον κατάλογο `crud-demo` 
+  ```
+  ng g c crud-demo/crud-demo
+  ng g c crud-demo/create-user
+  ng g c crud-demo/read-user
+  ng g c crud-demo/update-user
+  ng g c crud-demo/delete-user
+  ng g c crud-demo/list-users
+  ```
+
+## 11. CRUD users: List Users
+
+## 12. CRUD users: Read User
+
+- Πρόσβαση σε template variable μέσω του @ViewChild
+
 - Χρήση του decorator `@Output()` σε χαρακτηριστικό της κλάσης για τη δημιουργία custom event στο component. Συνδυάζεται με το interface `EventEmitter<T>` όπου `Τ` ο τύπος των δεδομένων που μεταδίδει το custom event.
 - To custom event συνήθως προκύπτει από ένα standard event στο template του component (πχ click πάνω σε ένα κουμπί).
 
