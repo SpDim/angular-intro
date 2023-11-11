@@ -2,6 +2,7 @@ import { Component, ElementRef, EventEmitter, Inject, Output, ViewChild } from '
 import { CommonModule } from '@angular/common';
 import { Person } from 'src/app/interfaces/person';
 import { AppService } from 'src/app/app.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-delete-user',
@@ -18,11 +19,26 @@ export class DeleteUserComponent {
 
   @ViewChild('userId') userIdInput!: ElementRef<HTMLInputElement>;
 
-  constructor(private appService: AppService = Inject(AppService)) {}
+  constructor(
+    // private appService: AppService = Inject(AppService), 
+    private http: HttpClient = Inject(HttpClient)
+  ) {}
 
   onClick() {
     const id = this.userIdInput.nativeElement.value;
-    this.appService.deleteUser(parseInt(id)).subscribe({
+    // this.appService.deleteUser(parseInt(id)).subscribe({
+    //   next: (user) => {
+    //     console.log('Deleted user:', user);
+    //     this.userNotFound = false;
+    //     this.userDeleted.emit();
+    //   },
+    //   error: (err) => {
+    //     console.log('Error:', err)
+    //     this.userNotFound = true;
+    //   },
+    //   complete: () => {console.log('Delete operation completed')}
+    // });
+    this.http.delete<Person>(`http://localhost:3000/users/${id}`).subscribe({
       next: (user) => {
         console.log('Deleted user:', user);
         this.userNotFound = false;
@@ -32,7 +48,6 @@ export class DeleteUserComponent {
         console.log('Error:', err)
         this.userNotFound = true;
       },
-      complete: () => {console.log('Delete operation completed')}
     });
   }
 
