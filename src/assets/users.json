@@ -125,15 +125,6 @@
       "address": "Athens, Gr",
       "photoURL": "https://i.pravatar.cc/?img=35",
       "id": 14
-    },
-    {
-      "givenName": "John",
-      "surName": "Sn.",
-      "age": "35",
-      "email": "sd@gmail.com",
-      "address": "Gr",
-      "photoURL": "https://i.pravatar.cc/?img=15",
-      "id": 15
     }
   ]
 }
